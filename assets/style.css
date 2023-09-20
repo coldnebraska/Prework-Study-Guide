@@ -11,9 +11,20 @@ footer {
     color: white;
 }
 
-h1,
-h2 {
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
     text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    border-bottom: 5px solid #888888;
+    background-color: rgb(170, 0, 0);
+    color: white;
 }
 
 img {
@@ -34,9 +45,10 @@ p {
     font-size: 30px;
   }
 
-  .card {
+.card {
     width: 80%;
     margin: 40px auto;
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
-  }
+    background-color: #e1e1e1;
+}
