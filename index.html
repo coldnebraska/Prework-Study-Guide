@@ -14,14 +14,13 @@
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
-      <section class="card">
+      <section class="card" id="general-section">
         <h2>General Notes</h2>
         <ul>
           <li>"Epic"->"User Story"->"Acceptance Criteria"->"Tasks"</li>
           <li><em>Rm -rf</em>: delete directory (r): recursively(everthing inside) (f): forcefully </li>
           <li>Slack: (' '): highlights words, (''' '''): adds a box around</li>
           <li>ctrl+/ to comment out a line in  vscode (/* */)</li>
-
         </ul>
       </section>
 
@@ -36,7 +35,7 @@
           <li>An element refers to the entire element from opening tag to closing tag, whereas a tag refers only to what appears inside the angle bracket</li>
           <li>Use heading tags in order from h1 to h6 and only use h1 once on each page</li>
           <li>Footers usually contain the author, copyright, contact, sitemap, and navigation</li>
-          <li>section elements are a semantic element that define a section in a document that contains thematic content</li>
+          <li>Section elements are a semantic element that define a section in a document that contains thematic content</li>
           <li>target="blank": opens a href into a new tab</li>
         </ul>
       </section>
@@ -44,12 +43,14 @@
       <section class="card" id="css-section">
         <h2>CSS: Cascading Style Sheets</h2>
         <ul>
-          <li>Ways to style a webpage using CSS</li>
+          <li>Ways to style a webpage using CSS:</li>
           <ul>
             <li>Inline CSS</li>
             <li>Internal CSS style sheet</li>
             <li>External CSS style sheet</li>
           </ul>
+          <br>
+
           <li>Inline CSS:</li>
           <ul>
             <li>Used to style an element directly in the HTML file</li>
@@ -57,41 +58,60 @@
             <li>Useful for quick and permanent changes</li>
             <li>Less flexible because each inline style must be edited individually whenever you make a design change</li>
           </ul>
+          <br>
+
           <li>Internal Style Sheet:</li>
           <ul>
             <li>Contains CSS rules for the webpage in the head section of the HTML file</li>
             <li>The rules only apply to that page. Configure CSS classes and IDs to style multiple elements in the page code</li>
           </ul>
+          <br>
+
           <li>External Style Sheet:</li>
           <ul>
             <li>Keeps all CSS rules in a separate file</li>
             <li>Makes design changes easier</li>
             <li>Linking goes in the head section</li>
           </ul>
+          <br>
+
           <li><strong>Cascading</strong> style sheets: reads top down, so place media queries at bottom</li>
           <li>Use fluid layouts: percentage based sizing instead of px based</li>
-          <li>A selector defines the element or attribute the rules/declarations will apply to</li>
           <li>Declarations contain two components: the CSS property we want to apply and the value of the property</li>
-          <li>The * selector applies the rules to all the elements visible on the page</li>
+          <br>
+
           <li>Display property: “display=”inline/block/inline-block/none/flex”</li>
-          <li>Block elements (takes up as much width as it can)(always starts on a new line): paragraph and unordered list</li>
-          <li>Inline elements (only takes up what it needs): anchor and image</li>
-          <li>Inline-block: set as inline but can apply height and width values</li>
-          <li>"margin": indicates how much space around the outside of an element/space between content</li>
-          <li>"padding": adds space around the content inside an element</li>
-          <li>"border" can be dashed</li>
+          <ul>
+            <li>Block elements (takes up as much width as it can)(always starts on a new line): paragraph and unordered list</li>
+            <li>Inline elements (only takes up what it needs): anchor and image</li>
+            <li>Inline-block: set as inline but can apply height and width values</li>
+          </ul>
+          <br>
+          
+          <li>Spacing attributes:</li>
+          <ul>
+            <li>"margin": indicates how much space around the outside of an element/space between content</li>
+            <li>"padding": adds space around the content inside an element</li>
+            <li>"border" can be dashed</li>
+          </ul>
+          <br>
+
           <li>The "rel" attribute specifies the relationship between the current document and the linked document resource</li>
-          <li>A class attribute lets us assign styles to certain elements</li>
           <li>Colors can be assigned by semantic (red), hexadecimal code/number (#888888), or rgb value (rgb(250,250,250))</li>
           <li>"float": align images</li>
-          <li>"order" allows to change the flex position to change to a different one (side element goes under even when placed above in html)</li>
-          <li>.lessons > p {}: takes class and applies to specific tag</li>
+          <br>
+          
           <li>Selector: everything before css curly brackets:</li>
           <ul>
             <li>.name: class selector</li>
             <li>#name: id selector</li>
             <li>name: html element</li>
           </ul>
+          <li>Selectors let us assign styles to certain elements</li>
+          <li>Selectors defines the element or attribute the rules/declarations will apply to</li>
+          <li>The * selector applies the rules to all the elements visible on the page</li>
+          <br>
+
           <li>Positions</li>
           <ul>
             <li>Static position: normal flow/default value</li>
@@ -101,6 +121,7 @@
           </ul>
           <li>"justify-content":align along main axis</li>
           <li>"align-items": align along secondary axis</li>
+          <li>"order": change the flex position to a different one (side element goes under even when placed above in html)</li>
         </ul>
       </section>
    
@@ -121,25 +142,35 @@
               <li>git pull origin main</li>
             </ol>
           </ul>
+          <br>
+
           <li>git status: checks what branch we are currently on</li>
           <li>git touch file-name: creates a new file in the current folder/directory</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <br>
+
           <li>git add -A:</li>
           <ul>
             <li>Adds modifications in the current working branch to the staging area</li>
             <li>-A indicates we want to add all changes</li>
             <li>The staging area informs Git that the changes will be added in the next commit</li>
           </ul>
+          <br>
+
           <li>git commit -m "message":</li>
           <ul>
             <li>Make sure to include a commit message to describe the changes implemented</li>
             <li>A commit creates a snapshot of the currently staged changes</li>
           </ul>
+          <br>
+
           <li>git pull origin main:</li>
           <ul>
             <li>Pulls down any changes from the main branch to check if it is in sync with our local branch</li>
             <li>Always do a git pull to make sure you are working on the latest version of the project on your local computer before you start to work</li>
           </ul>
+          <br>
+
           <li>git push origin branch-name:</li>
           <ul>
             <li>Pushes our changes to the remote branch on github</li>
@@ -152,6 +183,7 @@
         <h2>JavaScript</h2>
         <ul>
           <li>Variable: a named container that alows us to store data in our code</li>
+
           <li>Variable Types:</li>
           <ul>
             <li>String: "" or ''</li>
@@ -159,6 +191,8 @@
             <li>Number</li>
             <li>Array: []</li>
           </ul>
+          <br>
+
           <li>Functions:</li>
           <ul>
             <li>A set of instructions that tells the computer how to perform a task</li>
@@ -166,12 +200,13 @@
             <li>Must be called by name in order to execute and can be called as many times as needed</li>
             <li>Being able to call a function to execute it means you can control where in the control flow a ask is executed, if at all</li>
           </ul>
+          <br>
+
           <li>Control Flow is the order in which a computer executes code in a script</li>
           <li>Each line of JavaScript ends wih a semicolon</li>
           <li>Linking goes below the footer but above the closing body tag</li>
           <li>Index is the unique identifing number for a piece of data in an array</li>
           <li>Index numbers start at zero and are sequential</li>
-          <li>Comment out lines with a /*</li>
         </ul>
       </section>
     </main>
