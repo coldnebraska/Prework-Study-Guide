@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Prework Study Guide</title>
+    <title>UT Bootcamp Study Guide</title>
   </head>
   <body>
     <header id="top">
-      <h1>Prework Study Guide</h1>
+      <h1>UT Bootcamp Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
+      <!-- General Section -->
       <section class="card" id="general-section">
-        <h2>General Notes</h2>
+        <h2>General/VSCode Notes</h2>
         <ul>
           <li>"Epic"->"User Story"->"Acceptance Criteria"->"Tasks"</li>
           <li><em>Rm -rf</em>: delete directory (r): recursively(everthing inside) (f): forcefully </li>
           <li>Slack: (' '): highlights words, (''' '''): adds a box around</li>
-          <li>ctrl+/ to comment out a line in  vscode (/* */)</li>
+          <li>ctrl+/ to comment out a line (/* */ or //)</li>
           <li>Windows key+colon: brings up emoji panel</li>
+          <li>Alt+shft+downArrow copies line below</li>
+          <li>dev tools -> sources -> add global to watch</li>
         </ul>
       </section>
 
+      <!-- HTML Section -->
       <section class="card" id="html-section">
         <h2>HTML: Hypertext Markup Language</h2>
         <ul>
           <li>The head element contains information about the webpage</li>
           <li>The body element represents the visible content shown to the user</li>
+          <li>Anything that is seen or used goes in the body tag (scripts usually at the bottom)</li>
           <li>Add semantics to help with the acessability of your webpage and make your HTML easier to read by other devs and the browser</li>
           <li>Child elements are elements that are nested inside other elements</li>
           <li>Parent elements hold all the child elements</li>
@@ -41,6 +46,7 @@
         </ul>
       </section>
    
+      <!-- CSS Section -->
       <section class="card" id="css-section">
         <h2>CSS: Cascading Style Sheets</h2>
         <ul>
@@ -169,6 +175,7 @@
         </ul>
       </section>
    
+      <!-- Git Section -->
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
@@ -191,6 +198,7 @@
           <li>git status: checks what branch we are currently on</li>
           <li>git touch file-name: creates a new file in the current folder/directory</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git branch -d branch-name: deletes branch</li>
           <br>
 
           <li>git add -A:</li>
@@ -220,13 +228,17 @@
             <li>Pushes our changes to the remote branch on github</li>
             <li>On github, give the pull request a descriptive title and add instructions, to the body, for reviewing team members about what changes were made/how the feature is supposed to function/how to start the application so the feature can be tested</li>
           </ul>
+          <br>
+          <li>Can use bottom left in VSCode to change between branches</li>
         </ul>
       </section>
    
+      <!-- Javascript Section -->
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
           <li>Variable: a named container that alows us to store data in our code</li>
+          <br>
 
           <li>Variable Types:</li>
           <ul>
@@ -250,7 +262,151 @@
           <li>Each line of JavaScript ends wih a semicolon</li>
           <li>Linking goes below the footer but above the closing body tag</li>
           <li>Index is the unique identifing number for a piece of data in an array</li>
-          <li>Index numbers start at zero and are sequential</li>
+          <li>Index numbers start at zero([0]) and are sequential</li>
+          <li>// to comment in JS</li>
+          <li>Arguements are the values for your parameters for functions</li>
+          <li>var can be redeclared and its value updated</li>
+          <li>let can't be redeclared, but its value can be updated</li>
+          <li>const can't be redeclared or have its value updated</li>
+          <li>typeOf returns the variable type</li>
+          <li>name.length: returns the length of the variable</li>
+          <br>
+
+          <li>Variable types:</li>
+          <ul>
+            <li>null</li>
+            <li>undefined</li>
+            <li>boolean</li>
+            <li>number</li>
+            <li>string</li>
+            <li>bigint</li>
+            <li>symbol</li>
+          </ul>
+          <br>
+          <li>"==": loose equality (type doesn't matter, value only)</li>
+          <li>"===": strict equality (type matters)</li>
+          <br>
+
+          <li>Operators:</li>
+          <ul>
+            <li>!= and !==: not equal operators</li>
+            <li>&&: AND operator</li>
+            <li>||: OR operator</li>
+            <li>!: NOT operator</li>
+          </ul>
+          <br>
+          <li>Falsey Values:</li>
+          <ul>
+            <li>empty string</li>
+            <li>zero</li>
+            <li>NaN: not a number</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>false</li>
+          </ul>
+          <br>
+
+          <li>Switch condition statements:</li>
+          <pre>
+  switch (true) {
+    case expression1 && expression2:
+      console.log()
+      break
+    case expression1:
+      console.log()
+      break
+    default:
+      console.log()
+  }
+          </pre>
+          <pre>
+  switch (true) {
+    case expression1:
+    case expression2:
+      console.log()
+      break
+    default:
+      console.log()
+  }
+          </pre>
+          <li>Loops:</li>
+          <ul>
+          <li>For loop:</li>
+          <pre>
+  for (let x = number, x < number, x++) {}
+          </pre>
+          <li>While loop:</li>
+          <pre>
+  x = 0
+  while (x < number) {
+    x++
+  }
+          </pre>
+          </ul>
+          <li>Functions:</li>
+          <ul>
+            <li>Function</li>
+            <pre>
+  function functionName(parameterName1, parameterName2, etc) {} //declares function
+
+  functionName(value1, value2) //calls function
+            </pre>
+            <li>Variable function</li>
+            <pre>
+  var varFunction = function() {}
+  
+  varFunction()
+            </pre>
+          </ul>
+          <li>Using local variables override global variables</li>
+          <li>Can use global variables inside local functions</li>
+          <br>
+
+          <li>Arrays:</li>
+          <ul>
+            <li>arrayName.pop(): removes last element</li>
+            <li>arrayName.sort(): sorts arrays</li>
+            <ul><li>defaults to alphabetically, even numbers (1, 12,  13, 2)</li></ul>
+            <li>arrayName.push(value1): adds value1 to end of an array</li>
+            <li>arrayName.unshift(value1): adds value1 to beginning of an array</li>
+            <li>arrayName.slice(): returns selected elements as a new array</li>
+            <ul><li>Can slice strings into an array</li></ul>
+            <li>arrayName = arrayName.replace(value1, value2): replaces value1 with value2</li>
+            <li>var arrayNew = array1.concat(array2, array3): combines array 1, array2, and array3</li>
+            <li>arrayName.toUpperCase()</li>
+          </ul>
+          <br>
+
+          <li>Objects:</li>
+          <ul>
+            <pre>
+var planetEarth = { // declaring object with its properties and values
+  name: “earth”,
+  moons: 1,
+  isPopulated: true,
+}
+var planetVenus = {
+  name: “venus”,
+  moons: 2,
+  isPopulated: false,
+}
+              
+var planets = [planetEarth, planetVenus] // creating array with the objects as elements
+              
+planetEarth[“name”] // referencing property of object
+planetEarth.moons // referencing property of object              
+            </pre>
+          </ul>
+          <li>Values are given to properties/keys inside an object</li>
+          <li>Objects can store other objects and arrays</li>
+          <li>Objects can store functions -> then called a method</li>
+          <pre>
+  var planet = {
+    funFact: function () {
+      console.log(“funFact”)
+  }
+  planet.funFact()            
+          </pre>
         </ul>
       </section>
     </main>
