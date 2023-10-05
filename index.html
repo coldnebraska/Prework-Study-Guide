@@ -78,6 +78,12 @@
           <li><strong>Cascading</strong> style sheets: reads top down, so place media queries at bottom</li>
           <li>Use fluid layouts: percentage based sizing instead of px based</li>
           <li>Declarations contain two components: the CSS property we want to apply and the value of the property</li>
+          <li>"font-family:inherit":lets child tag inherit font-family of parent tag</li>
+          <li>fonts load left to right until if finds one that the browser has</li>
+          <li>"text:transform: uppercase"</li>
+          <li>"text-decoration: underline/strikethrough"</li>
+          <li>-webkit appearance: for chrome and safari</li>
+          <li>-moz-appearance: for firefox</li>
           <br>
 
           <li>Display property: “display=”inline/block/inline-block/none/flex”</li>
@@ -110,6 +116,21 @@
           <li>Selectors let us assign styles to certain elements</li>
           <li>Selectors defines the element or attribute the rules/declarations will apply to</li>
           <li>The * selector applies the rules to all the elements visible on the page</li>
+          <li>Most specific css selector takes priority</li>
+          <br>
+
+          <li>Pseudo Classes:</li>
+          <ul>
+            <li>+, >, , ~, comma: common/popular selector combinators</li>
+            <ul>
+              <li>+: second element immediately follows first</li>
+              <li>>: direct child element</li>
+              <li>space: decendant combinator</li>
+              <li>~: general sibling combinator</li>
+              <li>comma: selects all matching nodes/selectors that have the same declarations-> div/span/all h tags</li>
+            </ul>
+          </ul>
+          <li>Pseudo element: changes the content-> h1::after/before-> "content", "color", "etc."</li>
           <br>
 
           <li>Positions</li>
@@ -122,6 +143,17 @@
           <li>"justify-content":align along main axis</li>
           <li>"align-items": align along secondary axis</li>
           <li>"order": change the flex position to a different one (side element goes under even when placed above in html)</li>
+        </ul>
+        <br>
+
+        <li>Forms</li>
+        <ul>
+          <li>Form types</li>
+          <ul>
+            <li>button, checkbox, text, textarea, select</li>
+          </ul>
+          <li>"maxlength": creates a character limit for text boxes</li>
+          <li>Buttons in forms will submit all inputs in the form</li>
         </ul>
       </section>
    
