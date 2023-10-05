@@ -21,6 +21,7 @@
           <li><em>Rm -rf</em>: delete directory (r): recursively(everthing inside) (f): forcefully </li>
           <li>Slack: (' '): highlights words, (''' '''): adds a box around</li>
           <li>ctrl+/ to comment out a line in  vscode (/* */)</li>
+          <li>Windows key+colon: brings up emoji panel</li>
         </ul>
       </section>
 
@@ -84,7 +85,16 @@
           <li>"text-decoration: underline/strikethrough"</li>
           <li>-webkit appearance: for chrome and safari</li>
           <li>-moz-appearance: for firefox</li>
+          <li>Attribute selectors: attribute, attribute=value, attribute~=value, etc.</li>
           <br>
+
+          <li>CSS Variables:</li>
+          <ul>
+            <li>add css variables to ::root{} -> makes accessible to the whole page</li>
+            <li>-variable-name:value</li>
+            <li>reference variables with var(--name)</li>
+            <li>can set any value that goes on the right side (px, %, color) as a variable</li>
+          </ul>
 
           <li>Display property: “display=”inline/block/inline-block/none/flex”</li>
           <ul>
@@ -121,13 +131,15 @@
 
           <li>Pseudo Classes:</li>
           <ul>
-            <li>+, >, , ~, comma: common/popular selector combinators</li>
+            <li>Common/popular selector combinators</li>
             <ul>
               <li>+: second element immediately follows first</li>
               <li>>: direct child element</li>
               <li>space: decendant combinator</li>
               <li>~: general sibling combinator</li>
               <li>comma: selects all matching nodes/selectors that have the same declarations-> div/span/all h tags</li>
+              <li>:nth-child(even/odd/number)</li>
+              <li>*: everything combinator</li>
             </ul>
           </ul>
           <li>Pseudo element: changes the content-> h1::after/before-> "content", "color", "etc."</li>
